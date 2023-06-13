@@ -13,3 +13,5 @@ jobs:
     steps:
       - name: Hello Step
         run: echo "Hello ${{ github.event.inputs.name }}"
+      - name: User Name
+        run: echo "User Name ${{ github.event.release.author.login }}"
