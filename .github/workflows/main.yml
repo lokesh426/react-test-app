@@ -15,3 +15,6 @@ jobs:
         run: echo "Hello ${{ github.event.inputs.name }}"
       - name: User Name
         run: echo "User Name ${GITHUB_ACTOR}"
+      - name: User ID
+        run: echo "User ID ${GITHUB_ACTOR_ID}"
+        
